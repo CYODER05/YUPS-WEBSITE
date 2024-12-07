@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Yup's</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="page-content">
+    <header class="header-ribbon flex">
+        <div class="logo-container">
+            <h1><a href="/">YUP'S</a></h1>
+        </div>
+
+        <nav class="navigation flex" id="navigation">   
+            <ul class="flex">
+                <a target="_self" href="menu.html"><li>Menu</li></a>
+                <a target="_self" href="about.html"><li>About</li></a>
+                <a target="_self" href="careers.html"><li>Careers</li></a>
+                <a target="_self" href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+
+        <div id="open-sidebar" class="menu-icon-container" onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
+
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a target="_self" href="menu.html">Menu</a>
+            <a target="_self" href="about.html">About</a>
+            <a target="_self" href="careers.html">Careers</a>
+            <a target="_self" href="contact.html">Contact</a>
+        </div>
+
+        
+    </header>
+    <main>
+        <div class="home-hero">
+            <picture>
+                <source class="home-hero-img" media="(min-width: 1600px)" srcset="public\less-2-1-november-yups-2024.JPG">
+                <source class="home-hero-img" media="(min-width: 1200px)" srcset="public\november-yups-2024-16-9.JPG">
+                <source class="home-hero-img" media="(min-width: 800px)" srcset="public\7-5-november-yups-2024.JPG">
+                <source class="home-hero-img" media="(min-width: 700px)" srcset="public\1-1-november-yups-2024.JPG">
+                <source class="home-hero-img" media="(min-width: 550px)" srcset="public\3438-november-yups-2024.JPG">
+                <img class="home-hero-img" src="public\image_67199233.JPG" alt="Yup's">
+            </picture>
+            <div class="image-text"><h2>Closed For The Season</h2></div>
+        </div>
+        <div class="main-card">
+            <h2>Hudsonville Ice Cream</h2>
+            <p>Time tested recipies since 1926</p>
+            <div class="flavors-img-container">
+                <img class="flavors-img" src="public\hudsonville-ice-cream-flavors.jpg" alt="Flavors">
+            </div>
+        </div>
+        <div id="map"><iframe style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxXJq6X35FogR_ipzTYqKniA&key=AIzaSyCBDcEd_DOvHh7b6ZksPi-gVKBup_SwP-o"></iframe></div>
+    </main>
+    <footer>
+        <div class="footer-menu-container">
+            <a target="_self" href="menu.html"><h4>MENU</h4></a>
+            <a target="_self" href="about.html"><h4>ABOUT</h4></a>
+            <a target="_self" href="careers.html"><h4>CAREERS</h4></a>
+            <a target="_self" href="contact.html"><h4>CONTACT</h4></a>
+        </div>
+        <div class="footer-social">
+            <p>Find Us On Facebook!</p>
+                <a target="_blank" href="https://www.facebook.com/yupsdairyland"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Yup's Dairyland, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

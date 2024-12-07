@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en" id="drinksAndSlushiesMenu">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>MENU - SANDWICHES</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="sandwiches-menu.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body id="page-content">
+<div class="escape-container close"></div>
+    <header class="header-ribbon flex">
+        <div class="logo-container">
+            <h1><a href="/">YUP'S</a></h1>
+        </div>
+
+        <nav class="navigation flex" id="navigation">   
+            <ul class="flex">
+                <a target="_self" href="menu.html"><li>Menu</li></a>
+                <a target="_self" href="about.html"><li>About</li></a>
+                <a target="_self" href="careers.html"><li>Careers</li></a>
+                <a target="_self" href="contact.html"><li>Contact</li></a>
+            </ul>
+        </nav>
+
+        <div id="open-sidebar" class="menu-icon-container" onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
+
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a target="_self" href="menu.html">Menu</a>
+            <a target="_self" href="about.html">About</a>
+            <a target="_self" href="careers.html">Careers</a>
+            <a target="_self" href="contact.html">Contact</a>
+        </div>
+    </header>
+    <main>
+        <!-- item information (viewable in overlay) -->
+        <div class="overlay-container">
+            <div class="info-close-btn close"><i class="fa-solid fa-xmark"></i></div>
+            <div class="hamburger-info item-info">
+                <div class="hamburger-catrgories sub-catrgories">
+                <h3>Make It A Double!</h3>
+                <fieldset class="patty-container">
+                    <button type="button" class="patty-button active" value="patty-options">
+                      <h2>Single</h2>
+                      <span class="select-active">$5.50</span>
+                    </button>
+                    <button type="button" class="patty-button" value="patty-options">
+                      <h2>Double</h2>
+                      <span class="select-active">$7.00</span>
+                    </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">ADD-ONS</h3>
+                <hr>
+                <div class="add-ons-categories">
+                    <fieldset class="add-on-container">
+                        <button type="button" class="option-button add-n-btn add-on-button" value="bacon-options">
+                          <h2>Bacon<span class="amount">+ $1.00</span></h2>
+                          <div class="choice-icon-container check-icon0">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon0">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                        </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">TOPPINGS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn1 included-button active" value="tomato-options">
+                          <h2>Tomato</h2>
+                          <div class="choice-icon-container check-icon1">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon1">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn2 included-button active" value="lettuce-options">
+                          <h2>Lettuce</h2>
+                          <div class="choice-icon-container check-icon2">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon2">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn3 included-button active" value="onion-options">
+                          <h2>Diced Onions</h2>
+                          <div class="choice-icon-container check-icon3">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon3">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+                <h3 class="padding-left">CONDIMENTS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn1 condiment-button active" value="ketchup-options">
+                          <h2>Ketchup</h2>
+                          <div class="condiment-icon-container check-icon4">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon4">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn2 condiment-button active" value="mustard-options">
+                          <h2>Mustard</h2>
+                          <div class="condiment-icon-container check-icon5">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon5">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn3 condiment-button active" value="mayonnaise-options">
+                          <h2>Mayo</h2>
+                          <div class="condiment-icon-container check-icon6">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon6">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn4 condiment-button" value="relish-options">
+                          <h2>Relish</h2>
+                          <div class="condiment-icon-container check-icon7">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon7">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn5 condiment-button" value="jalapeno-options">
+                          <h2>Jalapenos</h2>
+                          <div class="condiment-icon-container check-icon8">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon8">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn6 condiment-button active" value="pickles-options">
+                          <h2>Pickles</h2>
+                          <div class="condiment-icon-container check-icon9">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon9">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            <div class="doubleHamburger-info item-info">
+                <div class="doubleHamburger-catrgories sub-catrgories">
+                <h3>Patty:</h3>
+                <fieldset class="patty-container">
+                    <button type="button" class="patty-button" value="patty-options">
+                      <h2>Single</h2>
+                      <span class="select-active">$5.50</span>
+                    </button>
+                    <button type="button" class="patty-button active" value="patty-options">
+                      <h2>Double</h2>
+                      <span class="select-active">$7.00</span>
+                    </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">ADD-ONS</h3>
+                <hr>
+                <div class="add-ons-categories">
+                    <fieldset class="add-on-container">
+                        <button type="button" class="option-button add-n-btn add-on-button" value="bacon-options">
+                          <h2>Bacon<span class="amount">+ $1.00</span></h2>
+                          <div class="choice-icon-container check-icon0">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon0">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                        </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">TOPPINGS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn1 included-button active" value="tomato-options">
+                          <h2>Tomato</h2>
+                          <div class="choice-icon-container check-icon1">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon1">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn2 included-button active" value="lettuce-options">
+                          <h2>Lettuce</h2>
+                          <div class="choice-icon-container check-icon2">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon2">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn3 included-button active" value="onion-options">
+                          <h2>Diced Onions</h2>
+                          <div class="choice-icon-container check-icon3">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon3">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+                <h3 class="padding-left">CONDIMENTS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn1 condiment-button active" value="ketchup-options">
+                          <h2>Ketchup</h2>
+                          <div class="condiment-icon-container check-icon4">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon4">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn2 condiment-button active" value="mustard-options">
+                          <h2>Mustard</h2>
+                          <div class="condiment-icon-container check-icon5">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon5">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn3 condiment-button active" value="mayonnaise-options">
+                          <h2>Mayo</h2>
+                          <div class="condiment-icon-container check-icon6">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon6">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn4 condiment-button" value="relish-options">
+                          <h2>Relish</h2>
+                          <div class="condiment-icon-container check-icon7">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon7">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn5 condiment-button" value="jalapeno-options">
+                          <h2>Jalapenos</h2>
+                          <div class="condiment-icon-container check-icon8">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon8">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn6 condiment-button active" value="pickles-options">
+                          <h2>Pickles</h2>
+                          <div class="condiment-icon-container check-icon9">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon9">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            <div class="cheeseburger-info item-info">
+                <div class="cheeseburger-catrgories sub-catrgories">
+                <h3>Make It A Double!</h3>
+                <fieldset class="patty-container">
+                    <button type="button" class="patty-button active" value="patty-options">
+                      <h2>Single</h2>
+                      <span class="select-active">$6.25</span>
+                    </button>
+                    <button type="button" class="patty-button" value="patty-options">
+                      <h2>Double</h2>
+                      <span class="select-active">$7.75</span>
+                    </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">ADD-ONS</h3>
+                <hr>
+                <div class="add-ons-categories">
+                    <fieldset class="add-on-container">
+                        <button type="button" class="option-button add-n-btn add-on-button" value="bacon-options">
+                          <h2>Bacon<span class="amount">+ $1.00</span></h2>
+                          <div class="choice-icon-container check-icon0">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon0">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                        </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">TOPPINGS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn1 included-button active" value="tomato-options">
+                          <h2>Tomato</h2>
+                          <div class="choice-icon-container check-icon1">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon1">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn2 included-button active" value="lettuce-options">
+                          <h2>Lettuce</h2>
+                          <div class="choice-icon-container check-icon2">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon2">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn3 included-button active" value="onion-options">
+                          <h2>Diced Onions</h2>
+                          <div class="choice-icon-container check-icon3">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon3">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+                <h3 class="padding-left">CONDIMENTS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn1 condiment-button active" value="ketchup-options">
+                          <h2>Ketchup</h2>
+                          <div class="condiment-icon-container check-icon4">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon4">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn2 condiment-button active" value="mustard-options">
+                          <h2>Mustard</h2>
+                          <div class="condiment-icon-container check-icon5">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon5">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn3 condiment-button active" value="mayonnaise-options">
+                          <h2>Mayo</h2>
+                          <div class="condiment-icon-container check-icon6">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon6">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn4 condiment-button" value="relish-options">
+                          <h2>Relish</h2>
+                          <div class="condiment-icon-container check-icon7">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon7">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn5 condiment-button" value="jalapeno-options">
+                          <h2>Jalapenos</h2>
+                          <div class="condiment-icon-container check-icon8">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon8">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn6 condiment-button active" value="pickles-options">
+                          <h2>Pickles</h2>
+                          <div class="condiment-icon-container check-icon9">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon9">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            <div class="doubleCheeseburger-info item-info">
+                <div class="doubleCheeseburger-catrgories sub-catrgories">
+                <h3>Patty:</h3>
+                <fieldset class="patty-container">
+                    <button type="button" class="patty-button" value="patty-options">
+                      <h2>Single</h2>
+                      <span class="select-active">$5.50</span>
+                    </button>
+                    <button type="button" class="patty-button active" value="patty-options">
+                      <h2>Double</h2>
+                      <span class="select-active">$7.00</span>
+                    </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">ADD-ONS</h3>
+                <hr>
+                <div class="add-ons-categories">
+                    <fieldset class="add-on-container">
+                        <button type="button" class="option-button add-n-btn add-on-button" value="bacon-options">
+                          <h2>Bacon<span class="amount">+ $1.00</span></h2>
+                          <div class="choice-icon-container check-icon0">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon0">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                        </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">TOPPINGS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn1 included-button active" value="tomato-options">
+                          <h2>Tomato</h2>
+                          <div class="choice-icon-container check-icon1">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon1">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn2 included-button active" value="lettuce-options">
+                          <h2>Lettuce</h2>
+                          <div class="choice-icon-container check-icon2">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon2">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn3 included-button active" value="onion-options">
+                          <h2>Diced Onions</h2>
+                          <div class="choice-icon-container check-icon3">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon3">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+                <h3 class="padding-left">CONDIMENTS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn1 condiment-button active" value="ketchup-options">
+                          <h2>Ketchup</h2>
+                          <div class="condiment-icon-container check-icon4">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon4">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn2 condiment-button active" value="mustard-options">
+                          <h2>Mustard</h2>
+                          <div class="condiment-icon-container check-icon5">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon5">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn3 condiment-button active" value="mayonnaise-options">
+                          <h2>Mayo</h2>
+                          <div class="condiment-icon-container check-icon6">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon6">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn4 condiment-button" value="relish-options">
+                          <h2>Relish</h2>
+                          <div class="condiment-icon-container check-icon7">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon7">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn5 condiment-button" value="jalapeno-options">
+                          <h2>Jalapenos</h2>
+                          <div class="condiment-icon-container check-icon8">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon8">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn6 condiment-button active" value="pickles-options">
+                          <h2>Pickles</h2>
+                          <div class="condiment-icon-container check-icon9">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon9">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+            <div class="baconCheeseburger-info item-info">
+                <div class="cheeseburger-catrgories sub-catrgories">
+                <h3>Make It A Double!</h3>
+                <fieldset class="patty-container">
+                    <button type="button" class="patty-button active" value="patty-options">
+                      <h2>Single</h2>
+                      <span class="select-active">$7.25</span>
+                    </button>
+                    <button type="button" class="patty-button" value="patty-options">
+                      <h2>Double</h2>
+                      <span class="select-active">$8.75</span>
+                    </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">ADD-ONS</h3>
+                <hr>
+                <div class="add-ons-categories">
+                    <fieldset class="add-on-container">
+                        <button type="button" class="option-button add-n-btn-bol add-on-button active" value="bacon-options">
+                            <h2>Bacon<span class="amount">+ $1.00</span></h2>
+                            <div class="choice-icon-container check-icon0true">
+                              <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div class="choice-icon-container plus-icon0false">
+                              <i class="fa-solid fa-circle-plus"></i>
+                            </div>
+                          </button>
+                    </fieldset>
+                </div>
+                <h3 class="padding-left">TOPPINGS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn1 included-button active" value="tomato-options">
+                          <h2>Tomato</h2>
+                          <div class="choice-icon-container check-icon1">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon1">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn2 included-button active" value="lettuce-options">
+                          <h2>Lettuce</h2>
+                          <div class="choice-icon-container check-icon2">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon2">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="included-categories">
+                    <fieldset class="included-container">
+                        <button type="button" class="option-button inc-btn3 included-button active" value="onion-options">
+                          <h2>Diced Onions</h2>
+                          <div class="choice-icon-container check-icon3">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="choice-icon-container plus-icon3">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+                <h3 class="padding-left">CONDIMENTS</h3>
+                <hr>
+                <div id="included-options-flex-container">
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn1 condiment-button active" value="ketchup-options">
+                          <h2>Ketchup</h2>
+                          <div class="condiment-icon-container check-icon4">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon4">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn2 condiment-button active" value="mustard-options">
+                          <h2>Mustard</h2>
+                          <div class="condiment-icon-container check-icon5">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon5">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn3 condiment-button active" value="mayonnaise-options">
+                          <h2>Mayo</h2>
+                          <div class="condiment-icon-container check-icon6">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon6">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn4 condiment-button" value="relish-options">
+                          <h2>Relish</h2>
+                          <div class="condiment-icon-container check-icon7">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon7">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn5 condiment-button" value="jalapeno-options">
+                          <h2>Jalapenos</h2>
+                          <div class="condiment-icon-container check-icon8">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon8">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                <div class="condiment-categories">
+                    <fieldset class="condiment-container">
+                        <button type="button" class="option-button cond-btn6 condiment-button active" value="pickles-options">
+                          <h2>Pickles</h2>
+                          <div class="condiment-icon-container check-icon9">
+                            <i class="fa-solid fa-circle-check"></i>
+                          </div>
+                          <div class="condiment-icon-container plus-icon9">
+                            <i class="fa-solid fa-circle-plus"></i>
+                          </div>
+                          <span class="select-active"></span>
+                        </button>
+                    </fieldset>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- item selections (viewable in ice-cream menu) -->
+        <div class="items-container"> 
+            <div class="item">
+                <div class="item"> 
+                    <h2>Sandwiches</h2>
+                    <hr>
+                    <div class="item-option-container">
+                    <div class="item-option open" onclick="hamburger()">
+                        <h3>Chicken Fillet Sandwich</h3>
+                    </div>
+                    <div class="item-option open" onclick="doubleHamburger()">
+                        <h3>BLT</h3>
+                    </div>
+                    <div class="item-option open" onclick="cheeseburger()">
+                        <h3>Ham Club</h3>
+                    </div>
+                    <div class="item-option open" onclick="doubleCheeseburger()">
+                        <h3>BBQ</h3>
+                    </div>
+                    <div class="item-option open" onclick="baconCheeseburger()">
+                        <h3>Ham & Cheese</h3>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-menu-container">
+            <a target="_self" href="menu.html"><h4>MENU</h4></a>
+            <a target="_self" href="about.html"><h4>ABOUT</h4></a>
+            <a target="_self" href="careers.html"><h4>CAREERS</h4></a>
+            <a target="_self" href="contact.html"><h4>CONTACT</h4></a>
+        </div>
+        <div class="footer-social">
+            <p>Find Us On Facebook!</p>
+                <a target="_blank" href="https://www.facebook.com/yupsdairyland"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Yup's Dairyland, All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="sandwiches.js"></script>
+
+</body>
+</html>
