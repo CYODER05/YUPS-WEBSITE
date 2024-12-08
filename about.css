@@ -1,0 +1,16 @@
+#construction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 80vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#construction img {
+    width: 20rem;
+    height: auto;
+}
