@@ -1,5 +1,6 @@
 main {
     background-color: rgb(245, 245, 247);
+    overflow-x: hidden;
 }
 
 .escape-container {
@@ -52,6 +53,10 @@ main {
     border-radius: 25px;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.item-info::-webkit-scrollbar {
+    display: none;
 }
 
 .item-info > .sub-catrgories {
@@ -126,5 +131,4 @@ main {
         width: 70vw;
         top: calc((100vh - 70vh + 80px) / 2);
     }
-
 }
