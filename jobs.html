@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Yup's</title>
+    <link rel="stylesheet" href="jobs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="icon" type="image/x-icon" href="public\ice-cream-cone.png">
+</head>
+<body id="page-content">
+    <img src="public\ice-cream-cone.png" class="hide">
+    <header class="header-ribbon flex">
+        <div class="logo-container">
+            <h1><a href="/">YUP'S</a></h1>
+        </div>
+
+        <nav class="navigation flex" id="navigation">   
+            <ul class="flex">
+                <a target="_self" href="menu.html"><li>Menu</li></a>
+                <a target="_self" href="about.html"><li>About</li></a>
+                <a target="_self" href="contact.html"><li>Contact</li></a>
+                <a target="_self" href="jobs.html"><li>Jobs</li></a>
+            </ul>
+        </nav>
+
+        <div id="open-sidebar" class="menu-icon-container" onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
+
+        <div id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a target="_self" href="menu.html">Menu</a>
+            <a target="_self" href="about.html">About</a>
+            <a target="_self" href="contact.html">Contact</a>
+            <a target="_self" href="jobs.html">Jobs</a>
+        </div>        
+    </header>
+    <main>
+        <div id="aplication-div">
+            <h1>Online Aplication:</h1>
+            
+            <h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSfSDX5tzPkqxAaEt3HtiteYJxs1rlwFL3JABfepkDt0C1NH9Q/viewform?usp=header" target="_blank">APPLICATION</a></h2>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-menu-container">
+            <a target="_self" href="menu.html"><h4>MENU</h4></a>
+            <a target="_self" href="about.html"><h4>ABOUT</h4></a>
+            <a target="_self" href="contact.html"><h4>CONTACT</h4></a>
+            <a target="_self" href="jobs.html"><h4>JOBS</h4></a>
+        </div>
+        <div class="footer-social">
+            <p>Find Us On Facebook!</p>
+                <a target="_blank" href="https://www.facebook.com/yupsdairyland"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2024 Yup's Dairyland Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
