@@ -19,6 +19,10 @@ body {
     display: flex;
 }
 
+.hide {
+    display: none;
+}
+
 .header-ribbon  {
     position: sticky;
     top: 0;
