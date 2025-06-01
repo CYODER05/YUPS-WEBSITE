@@ -22,7 +22,7 @@ const links = [
 const createHeader = () => {
     const logoContainer = createElement("div", "logoContainer width100 height100 flex flexColumn leftRightPadding2 fontSize1 bold");
     const logo = createElement("a", "logoAnchor link black", "YUP'S");
-    logo.href = "/";
+    logo.href = "./index.html";
     logoContainer.appendChild(logo);
     header.appendChild(logoContainer);
 
