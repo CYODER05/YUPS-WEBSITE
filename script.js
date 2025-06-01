@@ -465,7 +465,7 @@ const mainFunctions = {
     "contact": () => {
         section.replaceChildren();
         const contactContainer = createElement("a", "contactContainer width100 height100 flex flexColumn link menuStyleMid staatliches centerText");
-        contactContainer.href = `tel:${+1 (574) 370 - 5813}`;
+        contactContainer.href = `tel:${574-370-5813}`;
         contactContainer.innerHTML = `PHONE NUMBER: <br> +1 (574) 370 - 5813`
         main.appendChild(contactContainer);
     },
