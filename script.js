@@ -471,7 +471,7 @@ const mainFunctions = {
     },
     "jobs": () => {
         section.replaceChildren();
-        const jobsContainer = createElement("a", "jobsContainer width100 height100 flex flexColumn gap2 fontSize1 leftRightPadding2 centerText", "APPLICATIONS NOW BEING ACCEPTED!/nClick Here To Apply!");
+        const jobsContainer = createElement("a", "jobsContainer width100 height100 flex flexColumn gap2 fontSize1 leftRightPadding2 centerText", "APPLICATIONS NOW BEING ACCEPTED!<br>Click Here To Apply!");
         jobsContainer.href = "https://docs.google.com/forms/d/e/1FAIpQLSfSDX5tzPkqxAaEt3HtiteYJxs1rlwFL3JABfepkDt0C1NH9Q/viewform?usp=header";
         jobsContainer.target = "_blank";
         jobsContainer.style.color = "black";
