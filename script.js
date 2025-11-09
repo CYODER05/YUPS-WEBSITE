@@ -479,7 +479,8 @@ const mainFunctions = {
         jobsContainer.style.color = "black";
         jobsContainer.style.textDecoration = "none";
 
-        main.appendChild(jobsContainer, jobsLink);
+        main.appendChild(jobsContainer);
+        main.appendChild(jobsLink);
     }
 };
 
