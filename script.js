@@ -3,11 +3,19 @@ const main = document.getElementById("page-main");
 const footer = document.getElementById("page-footer");
 
 // Function for creating elements
-const createElement = (tag, className = '', textContent = '', id = '') => {
+const createElement = (tag, className = '', textContent = '', id = '', options = {}) => {
     const element = document.createElement(tag);
+    
     if (className) element.className = className;
-    if (textContent) element.textContent = textContent;
     if (id) element.id = id;
+
+    // If options.html is true, use innerHTML; otherwise use textContent
+    if (options.html) {
+        element.innerHTML = textContent;
+    } else if (textContent) {
+        element.textContent = textContent;
+    }
+
     return element;
 };
 
