@@ -3,19 +3,11 @@ const main = document.getElementById("page-main");
 const footer = document.getElementById("page-footer");
 
 // Function for creating elements
-const createElement = (tag, className = '', textContent = '', id = '', options = {}) => {
+const createElement = (tag, className = '', textContent = '', id = '') => {
     const element = document.createElement(tag);
-    
     if (className) element.className = className;
+    if (textContent) element.textContent = textContent;
     if (id) element.id = id;
-
-    // If options.html is true, use innerHTML; otherwise use textContent
-    if (options.html) {
-        element.innerHTML = textContent;
-    } else if (textContent) {
-        element.textContent = textContent;
-    }
-
     return element;
 };
 
@@ -479,7 +471,7 @@ const mainFunctions = {
     },
     "jobs": () => {
         section.replaceChildren();
-        const jobsContainer = createElement("a", "jobsContainer width100 height100 flex flexColumn gap2 fontSize1 leftRightPadding2 centerText", "", "APPLICATIONS NOW BEING ACCEPTED!<br>Click Here To Apply!");
+        const jobsContainer = createElement("a", "jobsContainer width100 height100 flex flexColumn gap2 fontSize1 leftRightPadding2 centerText", "APPLICATIONS NOW BEING ACCEPTED! Click Here To Apply!");
         jobsContainer.href = "https://docs.google.com/forms/d/e/1FAIpQLSfSDX5tzPkqxAaEt3HtiteYJxs1rlwFL3JABfepkDt0C1NH9Q/viewform?usp=header";
         jobsContainer.target = "_blank";
         jobsContainer.style.color = "black";
