@@ -500,7 +500,7 @@ const createFooter = () => {
     const socialIcon = createElement("i", "socialIcon fa-brands fa-facebook white fontSize1 noOverflowY");
     socialLink.appendChild(socialIcon);
 
-    const footerCopyright = createElement("div", "footerCopyright white paddingLeftRight centerText", "© 2025 Yup's Dairyland Inc. All rights reserved.");
+    const footerCopyright = createElement("div", "footerCopyright white paddingLeftRight centerText", "© 2026 Yup's Dairyland Inc. All rights reserved.");
     footerMenu.appendChild(footerCopyright);
 
     footer.appendChild(footerMenu);
