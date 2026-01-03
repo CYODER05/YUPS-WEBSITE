@@ -25,7 +25,7 @@ const createElement = (tag, className = '', textContent = '', id = '') => {
 // ===================================
 const NAVIGATION_LINKS = [
     { text: "MENU", href: "menu.html" },
-    { text: "CONTACT", href: "index.html" },
+    { text: "CONTACT", href: "/" },
     { text: "JOBS", href: "jobs.html" }
 ];
 
