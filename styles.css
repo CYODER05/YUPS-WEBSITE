@@ -223,6 +223,7 @@ header {
 .jobsContainer,
 .contactContainer {
     height: 90vh;
+    color: #0d1b2a;
 }
 
 /* ===================================
