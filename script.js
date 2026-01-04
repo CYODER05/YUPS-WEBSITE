@@ -96,7 +96,7 @@ const mainFunctions = {
             loading: "lazy",
             title: "map",
             allowfullscreen: '',
-            src: "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxXJq6X35FogR_ipzTYqKniA&key=AIzaSyCBDcEd_DOvHh7b6ZksPi-gVKBup_SwP-o"
+            src: "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJxXJq6X35FogR_ipzTYqKniA&key=REPLACE_ME_WITH_GOOGLE_KEY"
         });
         mapContainer.appendChild(map);
         main.appendChild(mapContainer);
@@ -475,4 +475,5 @@ const init = () => {
 };
 
 // Start the application when page loads
+
 window.onload = init;
